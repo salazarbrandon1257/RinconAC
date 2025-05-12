@@ -1,10 +1,13 @@
 //
 //    Toggle Mobile Navigation
 //
-const navbarMenu = document.querySelector("#navigation #navbar-menu");
+const navbarMenuSpanish = document.querySelector("#navigation #navbar-menu.spanish");
+const navbarMenuEnglish = document.querySelector("#navigation #navbar-menu.english");
+
 const hamburgerMenu = document.querySelector("#navigation .hamburger-menu");
 
 hamburgerMenu.addEventListener('click', function() {
-    navbarMenu.classList.toggle("open");
+    navbarMenuSpanish.classList.toggle("open");
+    navbarMenuEnglish.classList.toggle("open");
     hamburgerMenu.classList.toggle("clicked");
 });

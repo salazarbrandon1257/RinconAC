@@ -51,15 +51,17 @@ var body = document.querySelector("body");
 const englishToggle = document.querySelector("#english-button");
 
 let isEnglish = localStorage.getItem("isEnglish");
+let isSpanish = localStorage.getItem("isSpanish");
 
 const setToEnglish = () => {
+  console.log("Set to english");
   body.classList.add("isEnglish");
   localStorage.setItem("isEnglish", "enabled")
   body.classList.remove("isSpanish");
   localStorage.setItem("isSpanish", null)
 }
 
-if (isEnglish == "enabled") {
+if (isEnglish == "enabled" || (isEnglish == null && isSpanish == null)) {
   setToEnglish();
 }
 
@@ -76,7 +78,6 @@ englishToggle.addEventListener('click', () => {
 var body = document.querySelector("body");
 const spanishToggle = document.querySelector("#spanish-button");
 
-let isSpanish = localStorage.getItem("isSpanish");
 
 const setToSpanish = () => {
   body.classList.add("isSpanish");

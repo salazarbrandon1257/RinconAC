@@ -458,6 +458,35 @@
     -webkit-transform: translateY(0) rotateX(0);
     transform: translateY(0) rotateX(0);
   }
+
+  
+  #english-button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5.75em;
+    width: 3em;
+    height: 3em;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  #spanish-button {
+    display: block;
+    position: absolute ;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3.75em;
+    width: 3em;
+    height: 3em;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    padding: 0;
+  }
 }
 
 /* Desktop */

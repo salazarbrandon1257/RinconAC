@@ -1,3 +1,19 @@
+<div align="center">
+  <img alt="Logo" src="images\RinconACLogoDone.png" width="100" />
+</div>
+
+<p align="center">
+  Hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+</p>
+
+<p align="center">
+  <a href="https://app.netlify.com/sites/brandonsalazar/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/d983f0bd-e787-422d-bb08-ebd9439bc9a5/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
+
+
+
 # Starter-KitV3
 This is the latest version of my starter kit that I will be using from now on to build all my websites. It has a completely remade responsive navigation that is much simpler, and easier to edit and customize.  
 

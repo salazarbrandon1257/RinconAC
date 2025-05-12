@@ -40,3 +40,62 @@ darkModeToggle.addEventListener('click', () => {
     disableDarkMode();
   }
 })
+
+
+
+//
+//    English/Spanish
+//
+
+var body = document.querySelector("body");
+const englishToggle = document.querySelector("#english-button");
+
+let isEnglish = localStorage.getItem("isEnglish");
+
+const setToEnglish = () => {
+  body.classList.add("isEnglish");
+  localStorage.setItem("isEnglish", "enabled")
+  body.classList.remove("isSpanish");
+  localStorage.setItem("isSpanish", null)
+}
+
+if (isEnglish == "enabled") {
+  setToEnglish();
+}
+
+englishToggle.addEventListener('click', () => {
+  console.log("english toggled");
+  isEnglish = localStorage.getItem("isEnglish");
+  console.log("isEnglish: ", isEnglish);
+  if (isEnglish !== "enabled") {
+    console.log("set to English");
+    setToEnglish();
+  } 
+})
+
+var body = document.querySelector("body");
+const spanishToggle = document.querySelector("#spanish-button");
+
+let isSpanish = localStorage.getItem("isSpanish");
+
+const setToSpanish = () => {
+  body.classList.add("isSpanish");
+  localStorage.setItem("isSpanish", "enabled")
+  body.classList.remove("isEnglish");
+  localStorage.setItem("isEnglish", null)
+}
+
+if (isSpanish == "enabled") {
+  setToSpanish();
+}
+
+spanishToggle.addEventListener('click', () => {
+  console.log("Spanish toggled");
+  Spanish = localStorage.getItem("isSpanish");
+  console.log("isSpanish: ", isSpanish);
+  if (Spanish !== "enabled") {
+    console.log("set to Spanish");
+    setToSpanish();
+    console.log("isSpanish: ", isSpanish);
+  } 
+})

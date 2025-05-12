@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +13,12 @@
     <meta name="keywords" content="">
 
     <!--Social Media Display-->
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content="/images/social.jpg"/>
-    <meta property="og:image:secure_url" content="/images/social.jpg"/>
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/images/social.jpg" />
 
     <!--Favicons-->
     <!--Use https://realfavicongenerator.net/ to generate and download your favicons-->
@@ -47,6 +48,7 @@
 
     <title>Company Name | What They Do | Town and State</title>
 </head>
+
 <body>
     <!--Screen reader skip main nav-->
     <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
@@ -68,21 +70,49 @@
                 <img class="logo" aria-hidden="true" src="/images/RinconACLogoDone.png" decoding="async" alt="logo"></a>
 
             <!--Main Nav-->
-            <nav id="navbar-menu">
+            <nav id="navbar-menu" class="english">
                 <ul>
                     <li><a class="active" href="/index.html">Home</a></li>
                     <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/projects.html">Services</a></li>
                     <li><a href="/reviews.html">Reviews</a></li>
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
 
+            <!--Main Nav-->
+            <nav id="navbar-menu" class="spanish">
+                <ul>
+                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a href="/about.html">Sobre nosotros</a></li>
+                    <li><a href="/projects.html">Servicios</a></li>
+                    <li><a href="/reviews.html">Testimonios</a></li>
+                    <li><a href="/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+
+
             <!--Dark Mode toggle-->
             <button id="dark-mode-toggle">
                 <!--Moon is an inline SVG so you can edit the color if needed-->
-                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-                <img class="sun" aria-hidden="true" src="/images/sun.svg" decoding="async" alt="moon" width="15" height="15">
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
+                    style="enable-background:new 0 0 480 480" xml:space="preserve">
+                    <path
+                        d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+                </svg>
+                <img class="sun" aria-hidden="true" src="/images/sun.svg" decoding="async" alt="moon" width="15"
+                    height="15">
+            </button>
+
+            <button id="english-button">
+                <img aria-hidden="true" src="/images/usaFlagPng.png" decoding="async" alt="english-button" width="40"
+                    height="auto">
+            </button>
+
+            <button id="spanish-button">
+                <img aria-hidden="true" src="/images/mexicanFlag.png" decoding="async" alt="spanish-button" width="40"
+                    height="auto">
             </button>
 
             <!--Mobile Nav toggle-->
@@ -101,13 +131,14 @@
         <!-- ============================================ -->
         <!--                    LANDING                   -->
         <!-- ============================================ -->
-    
+
         <section id="hero">
             <div class="hero-content">
                 <div class="heroText">
+                    <p>Rincon A/C Services</p>
                     <h1 id="home-h">A/C & Heating Solutions</h1>
                     <p>
-                        {{}} years of experience offering Installation, Repair, and Maintainance services
+                        20 years of experience offering Installation, Repair, and Maintainance services in the DFW area
                     </p>
                     <a class="button-solid" href="/contact.html" target="_blank" rel="noopener">
                         Contact us here!
@@ -117,8 +148,9 @@
             <picture>
                 <source media="(max-width: 600px)" srcset="/images/landing-m.webp">
                 <source media="(min-width: 601px)" srcset="/images/landing.jpg">
-                <img aria-hidden="true" decoding="async" src="/images/landing.jpg" alt="new home" width="275" height="132">
-             </picture>
+                <img aria-hidden="true" decoding="async" src="/images/landing.jpg" alt="new home" width="275"
+                    height="132">
+            </picture>
         </section>
 
         <!-- ============================================ -->
@@ -129,7 +161,8 @@
             <!-- Get Icons From flaticon.com -->
             <div class="card">
                 <picture>
-                    <img aria-hidden="true" decoding="async" src="/images/service1.svg" alt="appliance" width="48" height="48">
+                    <img aria-hidden="true" decoding="async" src="/images/service1.svg" alt="appliance" width="48"
+                        height="48">
                 </picture>
                 <h2>Service 1</h2>
                 <p>
@@ -138,7 +171,8 @@
             </div>
             <div class="card">
                 <picture>
-                    <img aria-hidden="true" decoding="async" src="/images/service2.svg" alt="appliance" width="48" height="48">
+                    <img aria-hidden="true" decoding="async" src="/images/service2.svg" alt="appliance" width="48"
+                        height="48">
                 </picture>
                 <h2>Service 2</h2>
                 <p>
@@ -147,7 +181,8 @@
             </div>
             <div class="card">
                 <picture>
-                    <img aria-hidden="true" decoding="async" src="/images/service3.svg" alt="appliance" width="48" height="48">
+                    <img aria-hidden="true" decoding="async" src="/images/service3.svg" alt="appliance" width="48"
+                        height="48">
                 </picture>
                 <h2>Service 3</h2>
                 <p>
@@ -164,46 +199,58 @@
             <div class="container">
                 <div class="content">
                     <h2 class="title">Trusted home builders for (main city) for over 20 years</h2>
-                     <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis dolor consectetur dolorem inventore modi tenetur ex odit, amet beatae ad, doloribus tempora quae ab nulla minus temporibus at veritatis!
-                     </p>
-                     <p>
-                         <strong>A list if you need it:</strong>
-                      </p>
-                     <ul>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis dolor consectetur
+                        dolorem inventore modi tenetur ex odit, amet beatae ad, doloribus tempora quae ab nulla minus
+                        temporibus at veritatis!
+                    </p>
+                    <p>
+                        <strong>A list if you need it:</strong>
+                    </p>
+                    <ul>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something, this one is going to two lines so you can see what it looks like</span>
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
+                            <span>List item about something, this one is going to two lines so you can see what it looks
+                                like</span>
                         </li>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
                             <span>List item about something</span>
                         </li>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
                             <span>List item about something</span>
                         </li>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
                             <span>List item about something</span>
                         </li>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
                             <span>List item about something</span>
                         </li>
                     </ul>
-                     <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe laborum nam consequuntur porro inventore odio? Quod autem alias ratione cum reiciendis qui quaerat, sequi voluptatum voluptatibus, iusto itaque sed ullam. Quis, maiores corrupti. Rerum quo laudantium vero magnam tempora!
-                     </p>
-                     <a class="button-solid" href="/about.html">More About Us</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe laborum nam
+                        consequuntur porro inventore odio? Quod autem alias ratione cum reiciendis qui quaerat, sequi
+                        voluptatum voluptatibus, iusto itaque sed ullam. Quis, maiores corrupti. Rerum quo laudantium
+                        vero magnam tempora!
+                    </p>
+                    <a class="button-solid" href="/about.html">More About Us</a>
                 </div>
                 <picture class="image-box">
-                     <source media="(max-width: 600px)" srcset="/images/cabinets2-m.jpg">
-                     <source media="(min-width: 601px)" srcset="/images/cabinets2.jpg">
-                     <img aria-hidden="true" loading="lazy" decoding="async" src="/images/cabinets2.jpg" alt="cabinets" width="400" height="662">
-                 </picture>
+                    <source media="(max-width: 600px)" srcset="/images/cabinets2-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/images/cabinets2.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/images/cabinets2.jpg" alt="cabinets"
+                        width="400" height="662">
+                </picture>
             </div>
-       </section>
+        </section>
 
         <!-- ============================================ -->
         <!--          Extra Content For Ranking           -->
@@ -213,46 +260,57 @@
             <div class="container">
                 <div class="content">
                     <h2 class="title">Extra content, maybe talk about a main service</h2>
-                     <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis dolor consectetur dolorem inventore modi tenetur ex odit, amet beatae ad, doloribus tempora quae ab nulla minus temporibus at veritatis!
-                     </p>
-                     <p>
-                         <strong>A list if you need it:</strong>
-                      </p>
-                     <ul>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis dolor consectetur
+                        dolorem inventore modi tenetur ex odit, amet beatae ad, doloribus tempora quae ab nulla minus
+                        temporibus at veritatis!
+                    </p>
+                    <p>
+                        <strong>A list if you need it:</strong>
+                    </p>
+                    <ul>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
                             <span>List item about something</span>
                         </li>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
                             <span>List item about something</span>
                         </li>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
                             <span>List item about something</span>
                         </li>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
                             <span>List item about something</span>
                         </li>
                         <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg" alt="check mark" width="20" height="20">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="/images/check.svg"
+                                alt="check mark" width="20" height="20">
                             <span>List item about something</span>
                         </li>
                     </ul>
-                     <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe laborum nam consequuntur porro inventore odio? Quod autem alias ratione cum reiciendis qui quaerat, sequi voluptatum voluptatibus, iusto itaque sed ullam. Quis, maiores corrupti. Rerum quo laudantium vero magnam tempora!
-                     </p>
-                     <a class="button-solid" href="/contact.html">Get Free Quote</a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe laborum nam
+                        consequuntur porro inventore odio? Quod autem alias ratione cum reiciendis qui quaerat, sequi
+                        voluptatum voluptatibus, iusto itaque sed ullam. Quis, maiores corrupti. Rerum quo laudantium
+                        vero magnam tempora!
+                    </p>
+                    <a class="button-solid" href="/contact.html">Get Free Quote</a>
                 </div>
                 <picture class="image-box">
-                     <source media="(max-width: 600px)" srcset="/images/cabinets2-m.jpg">
-                     <source media="(min-width: 601px)" srcset="/images/cabinets2.jpg">
-                     <img aria-hidden="true" loading="lazy" decoding="async" src="/images/cabinets2.jpg" alt="cabinets" width="400" height="662">
-                 </picture>
+                    <source media="(max-width: 600px)" srcset="/images/cabinets2-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/images/cabinets2.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/images/cabinets2.jpg" alt="cabinets"
+                        width="400" height="662">
+                </picture>
             </div>
-       </section>
+        </section>
 
         <!-- ============================================ -->
         <!--             Final Call to Action             -->
@@ -262,15 +320,17 @@
             <div class="container">
                 <h2 class="title">Get It Done <br> With Us Today</h2>
                 <p>
-                    Say something catchy, informative, and encouraging to click the button to go to the contact page.  I like to add these to the bottom of all pages.
+                    Say something catchy, informative, and encouraging to click the button to go to the contact page. I
+                    like to add these to the bottom of all pages.
                 </p>
                 <a href="/contact.html" class="button-solid">Get an Estimate Now</a>
             </div>
             <picture>
                 <source media="(max-width: 600px)" srcset="/images/cabinets2-m.webp">
                 <source media="(min-width: 601px)" srcset="/images/cabinets2.jpg">
-                <img aria-hidden="true" loading="lazy" decoding="async" src="/images/cabinets2.jpg" alt="kitchen cabinets" width="1920" height="1280">
-             </picture>
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/images/cabinets2.jpg"
+                    alt="kitchen cabinets" width="1920" height="1280">
+            </picture>
         </section>
     </main>
 
@@ -281,7 +341,8 @@
     <footer id="footer">
         <div class="container">
             <div class="left-section">
-                <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="/images/RinconACLogoDone.png" alt="logo" width="264" height="78"></a>
+                <a class="logo" href="/index.html"><img loading="lazy" decoding="async"
+                        src="/images/RinconACLogoDone.png" alt="logo" width="264" height="78"></a>
                 <p>
                     Extra content if you need it, if not you can delete this whole p tag. I usually do.
                 </p>
@@ -289,7 +350,9 @@
             <div class="right-section">
                 <div class="lists">
                     <ul>
-                        <li><h2>Information</h2></li>
+                        <li>
+                            <h2>Information</h2>
+                        </li>
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="/about.html">About Us</a></li>
                         <li><a href="/projects.html">Projects</a></li>
@@ -297,14 +360,18 @@
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
                     <ul>
-                        <li><h2>Services</h2></li>
+                        <li>
+                            <h2>Services</h2>
+                        </li>
                         <li>Service1</li>
                         <li>Service2</li>
                         <li>Service4</li>
                         <li>Service5</li>
                     </ul>
                     <ul>
-                        <li><h2>Contact</h2></li>
+                        <li>
+                            <h2>Contact</h2>
+                        </li>
                         <li><a href="/contact.html">First Address Line<br>Denver CO 80206</a></li>
                         <li><a href="tel:555-779-4407">T: (555) 779-4407</a></li>
                         <li><a href="mailto:email@email.com">Click to Email</a></li>
@@ -316,7 +383,8 @@
         <div class="credit">
             <span>Designed and Hand Coded by</span>
             <a href="" target="_blank" rel="noopener">Your Company Name</a>
-            <span class="copyright"> Copyright 2021 - Present</span></div>
+            <span class="copyright"> Copyright 2021 - Present</span>
+        </div>
     </footer>
 
 
@@ -328,15 +396,16 @@
         animations with the navbar
     -->
     <script defer>
-        document.addEventListener('scroll', (e) => { 
+        document.addEventListener('scroll', (e) => {
             const scroll = document.documentElement.scrollTop;
-            if(scroll >= 100){
-        document.querySelector('body').classList.add('scroll')
+            if (scroll >= 100) {
+                document.querySelector('body').classList.add('scroll')
             } else {
-            document.querySelector('body').classList.remove('scroll')
+                document.querySelector('body').classList.remove('scroll')
             }
         });
     </script>
 
 </body>
+
 </html>

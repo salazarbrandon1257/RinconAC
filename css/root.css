@@ -486,6 +486,7 @@
     border: none;
     overflow: hidden;
     padding: 0;
+    margin-right: 1px;
   }
 }
 

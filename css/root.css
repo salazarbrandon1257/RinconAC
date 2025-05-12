@@ -459,7 +459,7 @@
     transform: translateY(0) rotateX(0);
   }
 
-  
+
   #english-button {
     display: block;
     position: absolute;
@@ -476,7 +476,7 @@
 
   #spanish-button {
     display: block;
-    position: absolute ;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 3.75em;
@@ -587,6 +587,14 @@
     height: 3.75em;
     width: auto;
   } */
+
+  #facebook {
+    height: 25px;
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 24px;
+  }
 
   .logo {
     width: 180px;
@@ -897,7 +905,7 @@
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: right;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 96%;
@@ -909,6 +917,7 @@
     padding: 0;
     margin-bottom: 0;
     margin-top: 0;
+    margin-right: 40px;
   }
 
   #footer .right-section .lists ul:nth-of-type(3) {

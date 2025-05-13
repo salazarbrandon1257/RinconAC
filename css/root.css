@@ -476,16 +476,16 @@
 
   #spanish-button {
     display: block;
-    position: relative;
-    transform: translateY(-71%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3.75em;
     width: 3em;
     height: 3em;
     background: transparent;
     border: none;
     overflow: hidden;
     padding: 0;
-    margin-right: 50px;
-    margin-left: auto;
   }
 }
 

@@ -62,22 +62,45 @@
                 <img class="logo" aria-hidden="true" src="/images/RinconACLogoDone.png" decoding="async">
             </a>
 
-            <!--Main Nav-->
-            <nav id="navbar-menu">
+            <nav id="navbar-menu" class="english">
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
+                    <li><a class="active" href="/index.html">Home</a></li>
                     <li><a href="/about.html">About Us</a></li>
-                    <li><a class="active" href="/projects.html">Projects</a></li>
-                    <li><a href="/reviews.html">Reviews</a></li>
+                    <li><a href="/projects.html">Gallery</a></li>
+                    <!-- <li><a href="/reviews.html">Reviews</a></li> -->
                     <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
 
-            <!--Dark Mode toggle-->
-            <button id="dark-mode-toggle">
-                <!--Moon is an inline SVG so you can edit the color if needed-->
-                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-                <img class="sun" aria-hidden="true" src="/images/sun.svg" decoding="async" alt="moon" width="15" height="15">
+                        <nav id="navbar-menu" class="spanish">
+                <ul>
+                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a href="/about.html">Sobre nosotros</a></li>
+                    <li><a href="/projects.html">Galleria</a></li>
+                    <!-- <li><a href="/reviews.html">Testimonios</a></li> -->
+                    <li><a href="/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+    <!--Dark Mode toggle-->
+    <button id="dark-mode-toggle">
+        <!--Moon is an inline SVG so you can edit the color if needed-->
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
+            style="enable-background:new 0 0 480 480" xml:space="preserve">
+            <path
+                d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+        </svg>
+        <img class="sun" aria-hidden="true" src="/images/sun.svg" decoding="async" alt="moon" width="15" height="15">
+    </button>
+
+     <button id="english-button">
+                <img aria-hidden="true" src="/images/usaFlagPng.png" decoding="async" alt="english-button" width="40"
+                    height="auto">
+            </button>
+
+            <button id="spanish-button">
+                <img aria-hidden="true" src="/images/mexicanFlag.png" decoding="async" alt="spanish-button" width="40"
+                    height="auto">
             </button>
 
             <!--Mobile Nav toggle-->
@@ -96,9 +119,9 @@
         <section id="int-hero">
             <h1 id="home-h">Our Projects</h1>
             <picture>
-                <source media="(max-width: 600px)" srcset="/images/cabinets2-m.jpg">
-                <source media="(min-width: 601px)" srcset="/images/cabinets2.jpg">
-                <img aria-hidden="true" loading="lazy" decoding="async" src="/images/cabinets2.jpg" alt="" width="400" height="662">
+                <source media="(max-width: 600px)" srcset="/images/landing.jpg">
+                <source media="(min-width: 601px)" srcset="/images/landing.jpg">
+                <img aria-hidden="true" decoding="async" src="/images/landing.jpg" alt="landing" width="400" height="662">
             </picture>
         </section>
 
@@ -110,56 +133,38 @@
             <div class="container">
                 <div class="row">
                     <picture>
-                        <source media="(max-width: 600px)" srcset="/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/images/portfolio/port1.jpg">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port1.jpg" alt="new hallway" width="420" height="567">
+                        <source media="(max-width: 600px)" srcset="/images/portfolio/port1.png">
+                        <source media="(min-width: 601px)" srcset="/images/portfolio/port1.png">
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port1.png" alt="new hallway" width="420" height="567">
                      </picture>
-                     <picture>
-                        <source media="(max-width: 600px)" srcset="/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/images/portfolio/port4.jpg">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port4.jpg" alt="new home construction" width="420" height="630">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="/images/portfolio/port4.png">
+                        <source media="(min-width: 601px)" srcset="/images/portfolio/port4.png">
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port4.png" alt="new hallway" width="420" height="567">
                      </picture>
+                </div>
+                <div class="row">
                      <picture>
-                        <source media="(max-width: 600px)" srcset="/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/images/portfolio/port7.jpg">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port7.jpg" alt="building a new wall" width="420" height="512">
+                        <source media="(max-width: 600px)" srcset="/images/portfolio/port2.png">
+                        <source media="(min-width: 601px)" srcset="/images/portfolio/port2.png">
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port2.png" alt="new home construction" width="420" height="630">
+                     </picture>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="/images/portfolio/port5.png">
+                        <source media="(min-width: 601px)" srcset="/images/portfolio/port5.png">
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port5.png" alt="new hallway" width="420" height="567">
                      </picture>
                 </div>
                 <div class="row">
                     <picture>
-                        <source media="(max-width: 600px)" srcset="/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/images/portfolio/port2.jpg">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port2.jpg" alt="new kitchen" width="420" height="492">
+                        <source media="(max-width: 600px)" srcset="/images/portfolio/port3.png">
+                        <source media="(min-width: 601px)" srcset="/images/portfolio/port3.png">
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port3.png" alt="building a new wall" width="420" height="512">
                      </picture>
-                     <picture>
-                        <source media="(max-width: 600px)" srcset="/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/images/portfolio/port5.jpg">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port5.jpg" alt="apartment addition" width="420" height="517">
-                     </picture>
-                     <picture>
-                        <source media="(max-width: 600px)" srcset="/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/images/portfolio/port8.jpg">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port8.jpg" alt="kew kitchen cabinets" width="420" height="629">
-                     </picture>
-                </div>
-                <div class="row">
                     <picture>
-                        <source media="(max-width: 600px)" srcset="/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/images/portfolio/port3.jpg">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port3.jpg" alt="new black window structure" width="420" height="625">
-                     </picture>
-                     
-                     <picture>
-                        <source media="(max-width: 600px)" srcset="/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/images/portfolio/port6.jpg">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port6.jpg" alt="kitchen rebovation" width="420" height="452">
-                     </picture>
-                     
-                     
-                     <picture>
-                        <source media="(max-width: 600px)" srcset="/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/images/portfolio/port9.jpg">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port9.jpg" alt="bathroom renovation" width="420" height="629">
+                        <source media="(max-width: 600px)" srcset="/images/portfolio/port6.png">
+                        <source media="(min-width: 601px)" srcset="/images/portfolio/port6.png">
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port6.png" alt="new hallway" width="420" height="567">
                      </picture>
                 </div>
             </div>

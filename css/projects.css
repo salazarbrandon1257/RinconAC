@@ -1,14 +1,40 @@
 /*-- -------------------------- -->
 <---         Portfolio          -->
 <--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0em) {
+
+/* Desktop */
+@media only screen and (min-width: 64em) {
   #portfolio {
     padding-top: 3.125em;
     padding-bottom: 35%;
     position: relative;
     z-index: 5;
   }
+}
+
+
+@media only screen and (min-width: 0em) and (max-width: 1023px) {
+  #portfolio {
+    padding-top: 3.125em;
+    padding-bottom: 48%;
+    position: relative;
+    z-index: 5;
+  }
+
+  #port3 {
+    position: absolute !important;
+    top: 375px;
+    left: 210px;
+  }
+
+  #port6 {
+    position: absolute !important;
+    top: 438px;
+    left: 50px;
+  }
+}
+
+/* Mobile */
   #portfolio .container {
     width: 96%;
     max-width: 82.625em;

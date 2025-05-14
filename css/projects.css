@@ -35,6 +35,7 @@
 }
 
 /* Mobile */
+@media only screen and (min-width: 0em) {
   #portfolio .container {
     width: 96%;
     max-width: 82.625em;

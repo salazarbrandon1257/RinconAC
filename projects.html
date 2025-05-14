@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +13,12 @@
     <meta name="keywords" content="">
 
     <!--Social Media Display-->
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content="/images/social.jpg"/>
-    <meta property="og:image:secure_url" content="/images/social.jpg"/>
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/images/social.jpg" />
 
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,7 +29,12 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Preload -->
-    <link rel="preload" as="image" href="/images/cabinets2-m.jpg">
+    <link rel="preload" as="image" href="/images/portfolio/port1.png">
+    <link rel="preload" as="image" href="/images/portfolio/port2.png">
+    <link rel="preload" as="image" href="/images/portfolio/port3.png">
+    <link rel="preload" as="image" href="/images/portfolio/port4.png">
+    <link rel="preload" as="image" href="/images/portfolio/port5.png">
+    <link rel="preload" as="image" href="/images/portfolio/port6.png">
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
 
@@ -40,6 +46,7 @@
 
     <title>Company Name | Projects | Town and State</title>
 </head>
+
 <body>
     <!--Screen reader skip main nav-->
     <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
@@ -71,7 +78,7 @@
                 </ul>
             </nav>
 
-                        <nav id="navbar-menu" class="spanish">
+            <nav id="navbar-menu" class="spanish">
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/about.html">Sobre nosotros</a></li>
@@ -80,18 +87,19 @@
                 </ul>
             </nav>
 
-    <!--Dark Mode toggle-->
-    <button id="dark-mode-toggle">
-        <!--Moon is an inline SVG so you can edit the color if needed-->
-        <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
-            style="enable-background:new 0 0 480 480" xml:space="preserve">
-            <path
-                d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
-        </svg>
-        <img class="sun" aria-hidden="true" src="/images/sun.svg" decoding="async" alt="moon" width="15" height="15">
-    </button>
+            <!--Dark Mode toggle-->
+            <button id="dark-mode-toggle">
+                <!--Moon is an inline SVG so you can edit the color if needed-->
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
+                    style="enable-background:new 0 0 480 480" xml:space="preserve">
+                    <path
+                        d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+                </svg>
+                <img class="sun" aria-hidden="true" src="/images/sun.svg" decoding="async" alt="moon" width="15"
+                    height="15">
+            </button>
 
-     <button id="english-button">
+            <button id="english-button">
                 <img aria-hidden="true" src="/images/usaFlagPng.png" decoding="async" alt="english-button" width="40"
                     height="auto">
             </button>
@@ -113,14 +121,15 @@
         <!-- ============================================ -->
         <!--                    LANDING                   -->
         <!-- ============================================ -->
-    
+
         <section id="int-hero">
             <h1 id="home-h" class="english">Gallery</h1>
             <h1 id="home-h" class="spanish">Galleria</h1>
             <picture>
                 <source media="(max-width: 600px)" srcset="/images/landing.jpg">
                 <source media="(min-width: 601px)" srcset="/images/landing.jpg">
-                <img aria-hidden="true" decoding="async" src="/images/landing.jpg" alt="landing" width="400" height="662">
+                <img aria-hidden="true" decoding="async" src="/images/landing.jpg" alt="landing" width="400"
+                    height="662">
             </picture>
         </section>
 
@@ -134,37 +143,43 @@
                     <picture>
                         <source media="(max-width: 600px)" srcset="/images/portfolio/port1.png">
                         <source media="(min-width: 601px)" srcset="/images/portfolio/port1.png">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port1.png" alt="new hallway" width="420" height="567">
-                     </picture>
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port1.png" alt="new hallway"
+                            width="420" height="567">
+                    </picture>
                     <picture>
                         <source media="(max-width: 600px)" srcset="/images/portfolio/port4.png">
                         <source media="(min-width: 601px)" srcset="/images/portfolio/port4.png">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port4.png" alt="new hallway" width="420" height="567">
-                     </picture>
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port4.png" alt="new hallway"
+                            width="420" height="567">
+                    </picture>
                 </div>
                 <div class="row">
-                     <picture>
+                    <picture>
                         <source media="(max-width: 600px)" srcset="/images/portfolio/port2.png">
                         <source media="(min-width: 601px)" srcset="/images/portfolio/port2.png">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port2.png" alt="new home construction" width="420" height="567">
-                     </picture>
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port2.png"
+                            alt="new home construction" width="420" height="567">
+                    </picture>
                     <picture>
                         <source media="(max-width: 600px)" srcset="/images/portfolio/port5.png">
                         <source media="(min-width: 601px)" srcset="/images/portfolio/port5.png">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port5.png" alt="new hallway" width="420" height="567">
-                     </picture>
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port5.png" alt="new hallway"
+                            width="420" height="567">
+                    </picture>
                 </div>
                 <div class="row">
                     <picture id="port3">
                         <source media="(max-width: 600px)" srcset="/images/portfolio/port3.png">
                         <source media="(min-width: 601px)" srcset="/images/portfolio/port3.png">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port3.png" alt="building a new wall" width="420" height="567">
-                     </picture>
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port3.png" alt="building a new wall"
+                            width="420" height="567">
+                    </picture>
                     <picture id="port6">
                         <source media="(max-width: 600px)" srcset="/images/portfolio/port6.png">
                         <source media="(min-width: 601px)" srcset="/images/portfolio/port6.png">
-                        <img loading="lazy" decoding="async" src="/images/portfolio/port6.png" alt="new hallway" width="420" height="567">
-                     </picture>
+                        <img loading="lazy" decoding="async" src="/images/portfolio/port6.png" alt="new hallway"
+                            width="420" height="567">
+                    </picture>
                 </div>
             </div>
         </section>
@@ -177,7 +192,8 @@
             <div class="container english">
                 <h2 class="title">Get It Done <br> With Us Today</h2>
                 <p>
-                    Fast, reliable, and hassle-free service is just a click away — reach out now and let’s get your comfort back on track!
+                    Fast, reliable, and hassle-free service is just a click away — reach out now and let’s get your
+                    comfort back on track!
                 </p>
                 <a href="/contact.html" class="button-solid">Get an Estimate Now</a>
             </div>
@@ -185,13 +201,13 @@
             <div class="container spanish">
                 <h2 class="title">¡Contáctanos hoy mismo!</h2>
                 <p>
-                    Un servicio rápido, confiable y sin complicaciones está a solo un clic de distancia: 
-                    ¡contáctenos ahora y recuperemos su comodidad!                </p>
+                    Un servicio rápido, confiable y sin complicaciones está a solo un clic de distancia:
+                    ¡contáctenos ahora y recuperemos su comodidad! </p>
                 <a href="/contact.html" class="button-solid">Obtenga un presupuesto ahora</a>
             </div>
             <picture>
                 <!-- whats this? -->
-                <source media="(max-width: 600px)" srcset="/images/project2.png"> 
+                <source media="(max-width: 600px)" srcset="/images/project2.png">
                 <source media="(min-width: 601px)" srcset="/images/project2.png">
                 <img aria-hidden="true" loading="lazy" decoding="async" src="/images/project2.png"
                     alt="kitchen cabinets" width="1920" height="1280">
@@ -270,15 +286,16 @@
         animations with the navbar
     -->
     <script defer>
-        document.addEventListener('scroll', (e) => { 
+        document.addEventListener('scroll', (e) => {
             const scroll = document.documentElement.scrollTop;
-            if(scroll >= 100){
-        document.querySelector('body').classList.add('scroll')
+            if (scroll >= 100) {
+                document.querySelector('body').classList.add('scroll')
             } else {
-            document.querySelector('body').classList.remove('scroll')
+                document.querySelector('body').classList.remove('scroll')
             }
         });
     </script>
 
 </body>
+
 </html>
